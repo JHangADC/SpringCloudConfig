@@ -9,16 +9,10 @@ spring:
     name: microcloud-config-eureka-client
 server:
   port: 7001
-security:
-  basic:
-    enabled: true   # 启用安全认证处理
-  user:
-    name: hangdev
-    password: hang
 eureka:
   client:
     service-url:
-      defaultZone: http://hangdev:hang@eureka-7001.com:7001/eureka
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
     fetch-registry: false
     register-with-eureka: false
   instance:
@@ -31,16 +25,10 @@ spring:
     name: microcloud-config-eureka-client
 server:
   port: 7001
-security:
-  basic:
-    enabled: true   # 启用安全认证处理
-  user:
-    name: hangbeta
-    password: hang
 eureka:
   client:
     service-url:
-      defaultZone: http://hangbeta:hang@eureka-7001.com:7001/eureka
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
     fetch-registry: false
     register-with-eureka: false
   instance:
