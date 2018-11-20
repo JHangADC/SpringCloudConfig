@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microcloud-config-eureka-client
+server:
+  port: 7001
+security:
+  user:
+    name: hangdev
+    password: hang
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: microcloud-config-eureka-client
+
+---
+spring:
+  profiles: beta
+  application:
+    name: microcloud-config-eureka-client
+server:
+  port: 7001
+security:
+  user:
+    name: hangbeta
+    password: hang
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: microcloud-config-eureka-client
