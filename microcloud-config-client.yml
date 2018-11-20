@@ -12,7 +12,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://hang:hang@eureka-dev.com:7001/eureka
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
 
 ---
 server:
@@ -24,4 +24,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://hang:hang@eureka-beta.com:7001/eureka
+      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
