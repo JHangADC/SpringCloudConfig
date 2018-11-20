@@ -1,27 +1,26 @@
 spring:
   profiles:
     active:
-      -dev
+    - dev
 ---
 server:
   port: 8201
 spring:
   profiles: dev
-  application:
+  application: 
     name: microcloud-config-client
-eureka:
+eureka: 
   client:
     service-url:
-      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
-
+      defaultZone: http://hang:hang@eureka-dev.com:7001/eureka
 ---
 server:
   port: 8202
 spring:
   profiles: beta
-  application:
+  application: 
     name: microcloud-config-client
-eureka:
+eureka: 
   client:
     service-url:
-      defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
+      defaultZone: http://hang:hang@eureka-beta.com:7001/eureka
