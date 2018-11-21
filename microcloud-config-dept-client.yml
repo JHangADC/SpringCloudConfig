@@ -1,4 +1,4 @@
-spring:
+ï»¿spring:
   profiles:
     active:
     - dev
@@ -60,14 +60,14 @@ spring:
 server:
   port: 8001
 eureka:
-  client: # ¿Í»§¶Ë½øĞĞEureka×¢²áµÄÅäÖÃ
+  client: # å®¢æˆ·ç«¯è¿›è¡ŒEurekaæ³¨å†Œçš„é…ç½®
     service-url:
       defaultZone: http://hang:hang@eureka-7001.com:7001/eureka
   instance:
-    lease-renewal-interval-in-seconds: 2 # ÉèÖÃĞÄÌøµÄÊ±¼ä¼ä¸ô£¨Ä¬ÈÏÊÇ30Ãë£©
-    lease-expiration-duration-in-seconds: 5 # Èç¹ûÏÖÔÚ³¬¹ıÁË5ÃëµÄ¼ä¸ô£¨Ä¬ÈÏÊÇ90Ãë£©
-    instance-id: deptbeta-8001.com  # ÔÚĞÅÏ¢ÁĞ±íÊ±ÏÔÊ¾Ö÷»úÃû³Æ
-    prefer-ip-address: true     # ·ÃÎÊµÄÂ·¾¶±äÎªIPµØÖ·
+    lease-renewal-interval-in-seconds: 2 # è®¾ç½®å¿ƒè·³çš„æ—¶é—´é—´éš”ï¼ˆé»˜è®¤æ˜¯30ç§’ï¼‰
+    lease-expiration-duration-in-seconds: 5 # å¦‚æœç°åœ¨è¶…è¿‡äº†5ç§’çš„é—´éš”ï¼ˆé»˜è®¤æ˜¯90ç§’ï¼‰
+    instance-id: deptbeta-8001.com  # åœ¨ä¿¡æ¯åˆ—è¡¨æ—¶æ˜¾ç¤ºä¸»æœºåç§°
+    prefer-ip-address: true     # è®¿é—®çš„è·¯å¾„å˜ä¸ºIPåœ°å€
 info:
   app.name: mldn-microcloud
   company.name: www.mldn.cn
