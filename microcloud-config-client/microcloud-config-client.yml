@@ -16,7 +16,7 @@ eureka:
 info:
   app.name: mldn-microcloud-dev-1
   company.name: www.baskman.cn
-  app.version: v-dev-1.0.0
+  app.version: v-dev-1.2.0
 ---
 server:
   port: 8202
